@@ -3,7 +3,6 @@ import React from 'react'
 const Trivia = ({ trivia }) => {
   return (
     <div>
-      <center><h1>Trivia List</h1></center>
       {trivia.map((question) => (
         <div class="question">
           <div class="question-body">

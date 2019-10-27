@@ -1,0 +1,140 @@
+ *{
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+  }
+  *:focus {
+    outline: none; 
+  } 
+  html {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 60%;
+  }
+  body {
+    /* font of dropdown title */
+    font-size: 1.5rem;
+  }
+  ul,
+  li {
+    margin: 0;
+  }
+  .App {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        /* make the title and box in a column */
+        flex-direction: column;
+    -webkit-box-align: center;
+        /* aligns the dropdown box in the center of the page */
+        align-items: center;
+    /* begins the title ..px from the top */
+    margin-top: 80px; 
+  }
+  .App h1 {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+  }
+  .App p {
+    /* margin under the title */
+    margin-bottom: 30px;
+    /* font size of the title */
+    font-size: 2.4rem;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  }
+  .wrapper {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+        justify-content: space-between;
+  }
+  .dd-wrapper {
+    -webkit-user-select: none;
+        -moz-user-select: none;
+            user-select: none;
+    position: relative;
+    /* width of the dropdown */
+    width: 200px;
+  }
+
+  .dd-header {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+        align-items: center;
+    -webkit-box-pack: center;
+        justify-content: center;
+    /* sets the hight of the dropdown button */
+    line-height: 38px;
+    /* sets the color of the button border */
+    border: 1px solid rgb(187, 182, 182);
+    border-radius: 3px;
+    cursor: default;
+    position: relative;
+    /* sets color of the button */
+    background-color: rgb(144, 153, 231);
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  }
+
+  .dd-header-title {
+    font-weight: 400;
+    margin: 2px 20px;
+  }
+
+  .dd-list {
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    border: 1px solid #dfdfdf;
+    border-top: none;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 5px -1px #e8e8e8;
+            box-shadow: 0 2px 5px -1px #e8e8e8;
+    font-weight: 500;
+    padding: 15px 0;
+    max-height: 215px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+  }
+  .dd-list-item {
+    width: 100%;
+    /* font size of list text */
+    font-size: 1.5rem;
+    padding: 8px 8px;
+    line-height: 1.2rem;
+    cursor: default;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .dd-list-item.selected {
+    /* text color when selected */
+    color: #fff;
+    /* background color when selected */
+    background-color: #a9a8ad;
+  }
+  .dd-list-item:hover {
+    color: #fff;
+    background-color: #a9a8ad;
+  }
+  .dd-wrapper-single {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+    position: relative;
+    width: 265px;
+  }
+  .dd-wrapper-single .dd-header {
+    border: 1px solid #ccc;
+  }
+  .dd-wrapper-single .dd-header .dd-header-title {
+    font-weight: 500;
+  }
+  .dd-wrapper-single .dd-list {
+    border: 1px solid #ccc;
+    border-top: none;
+  }
