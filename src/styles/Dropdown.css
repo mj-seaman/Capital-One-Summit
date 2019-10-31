@@ -1,4 +1,4 @@
- *{
+  *{
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     -webkit-box-sizing: border-box;
@@ -20,7 +20,20 @@
   li {
     margin: 0;
   }
-  .App {
+  .DateDropdown {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        /* make the title and box in a column */
+        flex-direction: column;
+    -webkit-box-align: left;
+        /* aligns the dropdown box in the center of the page */
+        align-items: left;
+    /* begins the title ..px from the top */
+    margin-top: 80px; 
+  }
+  .CategoryDropdown {
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: vertical;
@@ -33,15 +46,18 @@
     /* begins the title ..px from the top */
     margin-top: 80px; 
   }
-  .App h1 {
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
-  }
-  .App p {
-    /* margin under the title */
-    margin-bottom: 30px;
-    /* font size of the title */
-    font-size: 2.4rem;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  .DifficultyDropdown {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        /* make the title and box in a column */
+        flex-direction: column;
+    -webkit-box-align: right;
+        /* aligns the dropdown box in the center of the page */
+        align-items: right;
+    /* begins the title ..px from the top */
+    margin-top: 80px; 
   }
   .wrapper {
     display: -webkit-box;
@@ -137,4 +153,4 @@
   .dd-wrapper-single .dd-list {
     border: 1px solid #ccc;
     border-top: none;
-  }
+  } 

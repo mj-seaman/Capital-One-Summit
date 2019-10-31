@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../styles/global.css'
+import '/Users/jeanineseaman/my-app/src/styles/Dropdown.css'
 
 class Dropdown extends Component{
   constructor(props){
@@ -51,12 +51,21 @@ class Dropdown extends Component{
     const{listOpen, headerTitle} = this.state
     return(
       <div className="dd-wrapper">
-        <div className="dd-header" onClick={() => this.toggleList()}>
+        <div className="dd-header" 
+        onClick={() => this.toggleList()}
+        >
           <div className="dd-header-title">{headerTitle}</div>
         </div>
-        {listOpen && <ul className="dd-list" onClick={e => e.stopPropagation()}>
+        {listOpen && 
+        <ul className="dd-list" 
+        onClick={e => e.stopPropagation()}>
           {list.map((item)=> (
-            <li className="dd-list-item" key={item.id} onClick={() => this.selectItem(item.title, item.id, item.key)}>{item.title} {item.selected}</li>
+            <li className="dd-list-item" 
+            key={item.id} 
+            onClick={() => this.selectItem(item.title, item.id, item.key)}>
+            {item.title} 
+            {item.selected}
+            </li>
           ))}
         </ul>}
       </div>

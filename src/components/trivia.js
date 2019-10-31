@@ -1,4 +1,4 @@
-import React from 'react'
+/*import React from 'react'
 
 const Trivia = ({ trivia }) => {
   return (
@@ -16,3 +16,4 @@ const Trivia = ({ trivia }) => {
 };
 
 export default Trivia
+*/
