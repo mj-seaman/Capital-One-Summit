@@ -1,35 +1,35 @@
 import React, {Component} from 'react'
+import Data from './Data'
 import '/Users/jeanineseaman/my-app/src/styles/Button.css'
 
 
 class SearchButton extends Component {
-    /*constructor(props) {
+    constructor(props) {
         super(props)
         this.state = { 
             trivia: [],
-            displayRandom: false
+            display: false
         }
     }
     
     displayRandom = () => {
         this.setState({
-            displayRandom: !this.state.displayRandom
+            display: !this.state.display
         })
     }
     render () {
         let trivia = this.state.trivia
-        if ( this.state.displayRandom ) {
+        if ( this.state.display ) {
             trivia = (
                 <div>
-                    <RandomData key={trivia.id}
+                    <Data key={trivia.id}
                     title={trivia.id} />
                 </div>
             )
-        }*/
-        render () {
+        }
         return (
             <div className = 'Button'>
-                <button>Search Trivia</button>
+                <button onClick={this.display}>Search Trivia</button> {trivia}
             </div>
         )
     }

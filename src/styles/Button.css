@@ -1,9 +1,9 @@
 .Button button{
-    width: 10%;
+    width: 200px;
     font-size: 14px;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     padding: 10px 5px;
-    margin: 10px;
+    margin: 15px;
     margin-left: 15px;
 }
 

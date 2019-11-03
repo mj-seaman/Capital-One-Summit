@@ -1,8 +1,7 @@
 import React, {Component} from 'react'
 import API from './API'
-import Random from './Random'
 
-class CategoryData extends Component {
+class RandomData extends Component {
   state = {
     trivia: []
   }
@@ -16,11 +15,9 @@ class CategoryData extends Component {
   }
   render () {
     return( 
-      <div>
       <API trivia={this.state.trivia} /> 
-      </div>
     )
   }
 }
 
-export default CategoryData
+export default RandomData

@@ -1,23 +1,23 @@
 import React, {Component} from 'react'
 import API from './API'
 
-class CategoryData extends Component {
+class Data extends Component {
   state = {
-    category: []
+    trivia: []
   }
   componentDidMount() {
     fetch('http://jservice.io/api/clues')
       .then(res => res.json())
       .then((data) => {
-        this.setState({ category: data })
+        this.setState({ trivia: data })
       })
       .catch(console.log)
   }
   render () {
     return( 
-      <API trivia={this.state.category} /> 
+      <API trivia={this.state.trivia} /> 
     )
   }
 }
 
-export default CategoryData
+export default Data
