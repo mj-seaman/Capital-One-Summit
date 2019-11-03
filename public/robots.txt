@@ -1,3 +1,3 @@
-# give instructions about their site to web robots
+# give instructions about site to web robots
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
