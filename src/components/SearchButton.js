@@ -12,7 +12,7 @@ class SearchButton extends Component {
         }
     }
     
-    displayRandom = () => {
+    display = () => {
         this.setState({
             display: !this.state.display
         })
