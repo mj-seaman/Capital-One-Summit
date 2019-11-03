@@ -1,35 +1,21 @@
 import React, {Component} from 'react'
-import SearchDropdown from './components/SearchDropdown'
-import Trivia from './components/Triva'
+import Searches from './components/Searches'
+import Random from './components/Random'
+import SearchButton from './components/SearchButton'
+import './App.css'
 
 class App extends Component {
   render() {
   return (
-    <div>
-      <Trivia/>
+    <div className= 'App'>
+      <center><h1>Jeopardy! Trivia Search</h1></center>
+      <center><h2>Select Search Criteria</h2></center>
+      <Searches/>
+      <SearchButton/>
+      <Random/>
     </div>
   )
   }
 }
 
 export default App
-/*import CategoryDropdown from './components/CategoryDropdown'
-import DateDropdown from './components/DateDropdown'
-import DifficultyDropdown from './components/DifficultyDropdown'
-import CategoryInput from './components/CategoryInput'
-
-class App extends Component {
-  render () {
-    return (
-      <div>
-        <center><h1>Jeopardy! Trivia Search</h1></center>
-        <center><h2>Select Search Criteria</h2></center>
-        <DateDropdown />
-        <CategoryDropdown />
-        <DifficultyDropdown />
-      </div> 
-    )
-  }
-}
-
-export default App */

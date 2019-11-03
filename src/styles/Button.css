@@ -1,0 +1,12 @@
+.Button button{
+    width: 10%;
+    font-size: 14px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    padding: 10px 5px;
+    margin: 10px;
+    margin-left: 15px;
+}
+
+.Button button:hover {
+    background-color: rgba(68, 66, 66, 0.2);
+}

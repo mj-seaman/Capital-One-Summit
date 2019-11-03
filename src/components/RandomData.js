@@ -1,12 +1,13 @@
 import React, {Component} from 'react'
 import API from './API'
+import Random from './Random'
 
-class Trivia extends Component {
+class CategoryData extends Component {
   state = {
     trivia: []
   }
   componentDidMount() {
-    fetch('http://jservice.io/api/clues')
+    fetch('http://jservice.io/api/random')
       .then(res => res.json())
       .then((data) => {
         this.setState({ trivia: data })
@@ -15,11 +16,11 @@ class Trivia extends Component {
   }
   render () {
     return( 
+      <div>
       <API trivia={this.state.trivia} /> 
+      </div>
     )
   }
 }
 
-export default Trivia;
-
-
+export default CategoryData
