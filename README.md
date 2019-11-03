@@ -12,7 +12,9 @@ This was my first time using React, Javascript, CSS, and Heroku. In college I ha
 On React I learned how to make buttons that show a something from an API when clicked and search dropdowns that search through API data in order to find the users input. I also learned a lot of new skills on CSS, but did not have a lot time to design everything the way I would have liked to. 
 
 # My Solution
-I created multiple search dropdowns in order to let the user know which elements from each category they can choose from.  Then I made a button, that when pressed filters through the API and finds the trivia that match their input.
+I created multiple search dropdowns in order to let the user know which elements from each category they can choose from, and searched through the API in order to find matches in the selected categories.
+
+I made a button, that when pressed shows the user all of the trivia in http://jservice.io/api/clues.
 
 I also created a button that allows the user to get random trivia from the API.
 

@@ -17,6 +17,7 @@ class SearchButton extends Component {
             display: !this.state.display
         })
     }
+
     render () {
         let trivia = this.state.trivia
         if ( this.state.display ) {
@@ -29,7 +30,7 @@ class SearchButton extends Component {
         }
         return (
             <div className = 'Button'>
-                <button onClick={this.display}>Search Trivia</button> {trivia}
+                <button onClick={this.display}>Show all Trivia</button> {trivia}
             </div>
         )
     }

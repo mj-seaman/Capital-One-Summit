@@ -6,6 +6,7 @@ export default class AutoCompleteText extends Component {
         super(props)
         this.state = { 
             suggestions: [],
+            trivia: [],
             text: '',
         }
     }
@@ -38,12 +39,14 @@ export default class AutoCompleteText extends Component {
             </ul>
         )
     }
+
     render() {
         const { text } = this.state
         return (
             <div className="AutoCompleteText">
                 <input value={text} onChange={this.onTextChanged} type="text" />
                 {this.renderSuggestions()}
+
             </div>
         )
     }
