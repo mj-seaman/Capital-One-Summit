@@ -18,9 +18,11 @@ The application then have a button that shows the user all of the trivia in http
 
 I also created a button that allows the user to get random trivia from the API. I did this by calling http://jservice.io/api/random and getting a new random clue every time the button is pressed.
 
-# Next Steps
-I was not able to excess the API correctly, so I my web application finds matches in the trivia from http://jservice.io/api/clues. My next step would be to search through all of the trivia quesitons. 
+I hosted my website with S3 in AWS because I communicated with some people currently working the tech industry and they recommended knowing AWS. I have previously made a website with AWS, but it is very helpful to know how to host a web application.
 
-My search dropdowns find the elements that start with what the user inputs. I would like to change this to be able to find what the user types anywhere within the elements. 
+# Next Steps
+I was not able to excess the API correctly, so I my web application finds matches in the trivia from http://jservice.io/api/clues. My next step would be to collaborate with people who understand the API better so my web app can search through all of the trivia quesitons. 
+
+My search dropdowns find the elements that start with what the user inputs. I would like to change this to be able to find what the user types anywhere within the elements in the API. 
 
 Another step that I would take is creating a save option where the user could save any trivia that they liked and could visit again later.
