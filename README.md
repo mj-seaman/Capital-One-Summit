@@ -22,7 +22,7 @@ My live deployed website is located at http://www.maryjeanine-seaman.com.s3-webs
 I hosted my website with S3 in AWS because I consulted some people currently working the tech industry and they recommended knowing AWS. I have previously made a website with AWS, but it is very helpful to know how to host a web application.
 
 # Next Steps
-I was not able to excess the API correctly, so I my web application finds matches in the trivia from http://jservice.io/api/clues. My next step would be to collaborate with people who understand the API better so my web app can search through all of the trivia questions. 
+I was not able to access the API correctly, so I my web application finds matches in the trivia from http://jservice.io/api/clues. My next step would be to collaborate with people who understand the API better so my web app can search through all of the trivia questions. 
 
 My search dropdowns find the elements that start with what the user inputs. I would like to change this to be able to find what the user types anywhere within the elements in the API. 
 
