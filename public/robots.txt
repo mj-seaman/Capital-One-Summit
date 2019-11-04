@@ -1,3 +1,0 @@
-# give instructions about site to web robots
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
