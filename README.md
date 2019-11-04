@@ -18,7 +18,7 @@ The application then have a button that shows the user all of the trivia in http
 
 I also created a button that allows the user to get random trivia from the API. I did this by calling http://jservice.io/api/random and getting a new random clue every time the button is pressed.
 
-I hosted my website with S3 in AWS because I communicated with some people currently working the tech industry and they recommended knowing AWS. I have previously made a website with AWS, but it is very helpful to know how to host a web application.
+My live deployed website is loacted at http://www.maryjeanine-seaman.com.s3-website-us-east-1.amazonaws.com. I hosted my website with S3 in AWS because I consulted with some people currently working the tech industry and they recommended knowing AWS. I have previously made a website with AWS, but it is very helpful to know how to host a web application.
 
 # Next Steps
 I was not able to excess the API correctly, so I my web application finds matches in the trivia from http://jservice.io/api/clues. My next step would be to collaborate with people who understand the API better so my web app can search through all of the trivia quesitons. 
